@@ -10,31 +10,32 @@ package Calculadora;
  * @author Francis Castillo
  */
 public class Calculadora {
-     // Atributos de la clase 
-   private double num1;
-   private double num2;
-   private String marca;
-   private String modelo;
-     
-    
+    // Atributos de la clase 
+
+    private double num1;
+    private double num2;
+    private String marca;
+    private String modelo;
+
     // Métodos de la clase
     // Constructor por defecto
-    
-    public Calculadora (double num1, double num2, String marca, String modelo ){
-        this.num1=num1;
-        this.num2=num2;
-        this.marca=marca;
-        this.modelo=modelo;
-        
-    }
-     // Constructor sobrecargado
-    public Calculadora(String marca, String modelo ){
-        this.marca=marca;
-        this.modelo=modelo;
+    public Calculadora(double num1, double num2, String marca, String modelo) {
+        this.num1 = num1;
+        this.num2 = num2;
+        this.marca = marca;
+        this.modelo = modelo;
+
     }
     // Constructor sobrecargado
-    public Calculadora(){
-        
+
+    public Calculadora(String marca, String modelo) {
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+
+    // Constructor sobrecargado
+    public Calculadora() {
+
     }
 
     public double getNum1() {
@@ -68,6 +69,21 @@ public class Calculadora {
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
-    
-    
+
+    public double suma() {
+        return (this.num1 + this.num2);
+    }
+
+    public double resta() {
+        return (this.num1 - this.num2);
+    }
+
+    public double multiplicacion() {
+        return (this.num1 * this.num2);
+    }
+
+    public double division() {
+        return (this.num1 / this.num2);
+    }
+
 }
