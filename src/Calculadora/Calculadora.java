@@ -33,10 +33,6 @@ public class Calculadora {
         this.modelo = modelo;
     }
 
-    // Constructor sobrecargado
-    public Calculadora() {
-
-    }
 
     public double getNum1() {
         return num1;
