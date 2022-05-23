@@ -7,7 +7,7 @@ package Calculadora;
 
 /**
  *
- * @author Francis Castillo
+ * @author Francisco Castillo
  */
 public class Calculadora {
     // Atributos de la clase 
