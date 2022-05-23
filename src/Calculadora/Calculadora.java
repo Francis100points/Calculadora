@@ -33,6 +33,10 @@ public class Calculadora {
         this.modelo = modelo;
     }
 
+    public Calculadora() {
+    }
+    
+    
 
     public double getNum1() {
         return num1;
@@ -81,5 +85,5 @@ public class Calculadora {
     public double division() {
         return (this.num1 / this.num2);
     }
-
+  
 }
